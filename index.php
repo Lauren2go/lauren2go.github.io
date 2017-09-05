@@ -19,7 +19,8 @@
 		</ul>
 
 
-<?php include("includes/footer.html");?>
+<?php include 'footer.php';?>
+
 
 </body>
 </html>

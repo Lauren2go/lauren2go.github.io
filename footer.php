@@ -1,1 +1,3 @@
-<p>Tester footer</p>
+<?php
+echo "<p>Copyright &copy; 1999-" . date("Y") . " LaurenGrace</p>";
+?>

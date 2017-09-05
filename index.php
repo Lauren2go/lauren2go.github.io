@@ -17,5 +17,9 @@
 			<li>Witness the Fitness</li>
 			<li>FPL Blog</li>
 		</ul>
+
+
+<?php include("includes/footer.html");?>
+
 </body>
 </html>

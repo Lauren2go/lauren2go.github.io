@@ -1,0 +1,326 @@
+
+body { 
+	margin:0px;
+	font-family: 'Lato', sans-serif;
+}
+
+.pagecontainer {
+	margin: 10px;
+}
+
+.navbar li{
+	display: inline;
+	margin-right: 10px;
+}
+
+.navbar ul{
+	background: #283044;
+	padding: 10px 20px 10px 20px;
+	color: #E5E9EC;
+	margin: 0px;
+}
+
+.front-title {
+	text-align: center;
+	font-weight: 200;
+	font-size: 7em;
+	margin: 20px 0px 20px 0px;
+	}
+	
+.front-description {
+	text-align: center;
+	max-width: 600px;
+	margin: auto;
+	border-top: 1px dashed #E8C547;
+	border-bottom: 1px dashed #E8C547;
+	padding: 20px 60px 20px 60px;
+}
+
+
+.front-contact {
+	background: #E8C547;
+	padding: 20px;
+	margin: auto;
+	color: #283044;
+}
+
+.globalfooter{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #283044;
+	padding: 10px 20px 10px 20px;
+	color: #E5E9EC;
+	margin: 0px;
+	text-align: center;
+	font-size: 0.8em;
+	z-index:1000;
+}
+	
+	
+	
+h1 {
+  color: #333;
+  font-family: arial, sans-serif;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.verticaltabs {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 80%;
+}
+
+.verticaltabs input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.verticaltabs section {
+  display: block;
+}
+
+.verticaltabs section label {
+  background: #ccc;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 20px;
+  position: relative;
+  width: 180px;
+  z-index:100;
+}
+
+.verticaltabs section article {
+  display: none;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+}
+
+.verticaltabs section article:after {
+  background-color: #ccc;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  width: 220px;
+  z-index:1;
+}
+
+.verticaltabs input[name="sections"]:checked + label { 
+  background: #eee;
+  color: #bbb;
+}
+
+.verticaltabs input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .verticaltabs {
+    width: 100%;
+  }
+  
+  .verticaltabs section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .verticaltabs section article {
+    left: 200px;
+    min-width: 270px;
+  } 
+  
+  .verticaltabs section article:after {
+    background-color: #ccc;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+.after-tables {
+	float:left;
+	margin-bottom:80px;
+}
+
+/**tables for edibles**/
+
+
+.tabcontentstyle {
+    float:left;
+    color:#6E612F;
+    width:600px;
+    min-height:200px;
+    padding:20px;
+    border:2px solid #EFF1ED;
+    border-radius:0 3px 3px 3px;
+    background:rgba(227,197,152, 0.2);
+    position:relative;
+    z-index:10;
+    display:none;
+    clear:left;
+    top:-1px;
+    margin-bottom: 20px;
+  
+}
+
+ul.tabstyle li {
+    float:left;
+    margin-right:2px;
+}
+
+ul.tabstyle {
+    padding:0;
+    margin:0;
+    list-style:none;
+    float:left;
+    position:relative;
+    z-index:100;
+}
+
+ul.tabstyle li a {
+  display:block;
+    border:2px solid #EFF1ED;
+    border-radius:3px 3px 0 0;
+    background:#E3C598;
+    padding:10px 20px;
+    text-decoration:none;
+    color:#6E352C;
+  
+}
+
+.hiddenTargetstyle {
+    display:none;
+    position:fixed;
+}
+
+.tabbedPagesstyle {
+    position:relative;
+    margin:50px 0;
+    display:block;
+}
+
+/* change the tab to selected style */
+ul.tabs li a.default, 
+#tab1:target ~ .tabbedPages .tabs li a.default, #tab2:target ~ .tabbedPages .tabs li a.tab2, #tab3:target ~ .tabbedPages .tabs li a.tab3, #tab4:target ~ .tabbedPages .tabs li a.tab4 {
+background-color:rgba(227,197,152, 0.2);
+border-bottom:1px solid #fff;
+color:#6E612F;
+}
+
+/* show the tab content */
+div.default, 
+#tab1:target ~ .tabbedPages #view1, 
+#tab2:target ~ .tabbedPages #view2, 
+#tab3:target ~ .tabbedPages #view3, 
+#tab4:target ~ .tabbedPages #view4 {
+display:block;
+}
+
+/* reset the unclicked tabs to default */
+#tab2:target ~ .tabbedPages .tabs li a.default, #tab3:target ~ .tabbedPages .tabs li a.default, #tab4:target ~ .tabbedPages .tabs li a.default {
+background-color:#E3C598;
+border:2px solid #EFF1ED;
+color:#6E352C;
+}
+
+/* hide the default tab when selecting other tabs*/
+#tab2:target ~ .tabbedPages div.default, 
+#tab3:target ~ .tabbedPages div.default, 
+#tab4:target ~ .tabbedPages div.default {
+display:none;
+}
+.clear {
+    clear:left;
+}
+
+/**SECOND TABLE**/
+ul.tabsTwo li a.default2, 
+#tab5:target ~ .tabbedPagesTwo .tabsTwo li a.default2, #tab6:target ~ .tabbedPagesTwo .tabsTwo li a.tab6, #tab7:target ~ .tabbedPagesTwo .tabsTwo li a.tab7, #tab8:target ~ .tabbedPagesTwo .tabsTwo li a.tab8 {
+background-color:rgba(227,197,152, 0.2);
+border-bottom:1px solid #fff;
+color:#6E612F;
+}
+
+/* show the tab content */
+div.default2, 
+#tab5:target ~ .tabbedPagesTwo #view5, 
+#tab6:target ~ .tabbedPagesTwo #view6, 
+#tab7:target ~ .tabbedPagesTwo #view7, 
+#tab8:target ~ .tabbedPagesTwo #view8 {
+display:block;
+}
+
+/* reset the unclicked tabs to default */
+#tab6:target ~ .tabbedPagesTwo .tabsTwo li a.default2, #tab7:target ~ .tabbedPagesTwo .tabsTwo li a.default2, #tab8:target ~ .tabbedPagesTwo .tabsTwo li a.default2 {
+background-color:#E3C598;
+border:2px solid #EFF1ED;
+color:#6E352C;
+}
+
+/* hide the default tab when selecting other tabs*/
+#tab6:target ~ .tabbedPagesTwo div.default2, 
+#tab7:target ~ .tabbedPagesTwo div.default2, 
+#tab8:target ~ .tabbedPagesTwo div.default2 {
+display:none;
+}
+
+/**THIRD TABLE**/
+ul.tabsThree li a.default3, 
+#tab9:target ~ .tabbedPagesThree .tabsThree li a.default3, 
+#tab10:target ~ .tabbedPagesThree .tabsThree li a.tab10, 
+#tab11:target ~ .tabbedPagesThree .tabsThree li a.tab11, 
+#tab12:target ~ .tabbedPagesThree .tabsThree li a.tab12 {
+background-color:rgba(227,197,152, 0.2);
+border-bottom:1px solid #fff;
+color:#6E612F;
+}
+
+/* show the tab content */
+div.default3, 
+#tab9:target ~ .tabbedPagesThree #view9, 
+#tab10:target ~ .tabbedPagesThree #view10, 
+#tab11:target ~ .tabbedPagesThree #view11, 
+#tab12:target ~ .tabbedPagesThree #view12 {
+display:block;
+}
+
+/* reset the unclicked tabs to default */
+#tab10:target ~ .tabbedPagesThree .tabsThree li a.default3, 
+#tab11:target ~ .tabbedPagesThree .tabsThree li a.default3, 
+#tab12:target ~ .tabbedPagesThree .tabsThree li a.default3 {
+background-color:#E3C598;
+border:2px solid #EFF1ED;
+color:#6E352C;
+}
+
+/* hide the default tab when selecting other tabs*/
+#tab10:target ~ .tabbedPagesThree div.default3, 
+#tab11:target ~ .tabbedPagesThree div.default3, 
+#tab12:target ~ .tabbedPagesThree div.default3 {
+display:none;
+}

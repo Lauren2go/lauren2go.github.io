@@ -1,12 +1,20 @@
 
+/**color chart:
+#6E352C, #CF5230, #F59A44, #E3C598, #8A6E64, #6E612F**/
+
+
+
 body { 
 	margin:0px;
 	font-family: 'Lato', sans-serif;
+	background-image: url("https://img.leafcdn.tv/640/photos.demandstudios.com/getty/article/223/67/134153015.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	top:0;
 }
 
-.pagecontainer {
-	margin: 10px;
-}
+
 
 .navbar li{
 	display: inline;
@@ -18,30 +26,33 @@ body {
 	padding: 10px 20px 10px 20px;
 	color: #E5E9EC;
 	margin: 0px;
-}
-
-.front-title {
-	text-align: center;
-	font-weight: 200;
-	font-size: 7em;
-	margin: 20px 0px 20px 0px;
-	}
 	
-.front-description {
-	text-align: center;
-	max-width: 600px;
-	margin: auto;
-	border-top: 1px dashed #E8C547;
-	border-bottom: 1px dashed #E8C547;
-	padding: 20px 60px 20px 60px;
+}
+.newtabs {
+	float:left;
+	
 }
 
 
-.front-contact {
-	background: #E8C547;
-	padding: 20px;
-	margin: auto;
-	color: #283044;
+.newtabs ul {
+	background: white;
+	padding: 10px;
+	width: 200px;
+	margin: 0;
+	
+}
+
+.newtabs li {
+	list-style:none;
+}
+
+.newtabs li a {
+	text-decoration: none;
+	color: black;
+}
+
+.pagecontent {
+	display: inline;
 }
 
 .globalfooter{
@@ -60,20 +71,27 @@ body {
 	
 	
 	
-h1 {
-  color: #333;
+#pagehead {
+  color: #6E612F;
   font-family: arial, sans-serif;
-  margin: 1em auto;
-  width: 80%;
+  margin:0;
+  padding: 20px;
+  font-size: 2em;
+  background: rgba(0,0,0,0.7);
+  
+	
+ 
 }
+
+
 
 .verticaltabs {
   color: #333;
   display: block;
   font-family: arial, sans-serif;
-  margin: auto;
-  position: relative;
+  margin-bottom:80px;
   width: 80%;
+  position:absolute;
 }
 
 .verticaltabs input[name="sections"] {
@@ -81,6 +99,8 @@ h1 {
   position: absolute;
   top: -9999px;
 }
+
+
 
 .verticaltabs section {
   display: block;
@@ -99,10 +119,12 @@ h1 {
   z-index:100;
 }
 
+
+
 .verticaltabs section article {
   display: none;
   left: 230px;
-  min-width: 300px;
+  min-width: 600px;
   padding: 0 0 0 21px;
   position: absolute;  
   top: 0;
@@ -173,12 +195,12 @@ h1 {
 .tabcontentstyle {
     float:left;
     color:#6E612F;
-    width:600px;
+    width:800px;
     min-height:200px;
     padding:20px;
     border:2px solid #EFF1ED;
     border-radius:0 3px 3px 3px;
-    background:rgba(227,197,152, 0.2);
+    background:rgba(227,197,152, 0.6);
     position:relative;
     z-index:10;
     display:none;

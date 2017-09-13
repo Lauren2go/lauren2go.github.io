@@ -1,0 +1,121 @@
+* {
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.navbar li{
+	display: inline;
+	margin-right: 10px;
+}
+
+.navbar ul{
+	background: #283044;
+	padding: 10px 20px 10px 20px;
+	color: #E5E9EC;
+	margin: 0px;
+}
+
+.navbar a{
+	color:white;
+	text-decoration: none;
+}
+
+.globalfooter{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #283044;
+	padding: 10px 20px 10px 20px;
+	color: #E5E9EC;
+	margin: 0px;
+	text-align: center;
+	font-size: 0.8em;
+}
+	
+.logo {
+  padding: 20px 20px;
+}
+
+.wrapper {
+   padding-bottom: 40px;
+}
+
+.front-main {
+  width:70%;
+  min-height:400px;
+  background-image: url("https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/18012138_1687723807912373_1358498941703815168_n.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+  margin: 0px 40px 0px 80px;
+  box-shadow:  2px 2px 2px #888888;
+}
+
+.nav2 {
+  float:right;
+  margin-top: -30px;
+}
+
+.nav2 li {
+     list-style:none;
+    display:inline;
+  padding: 5px 10px;    
+}
+
+.front-main h1{
+ color:#181818;
+  font-size: 5em;
+  margin-left: -50px;
+}
+
+#front-content p {
+	    margin-left: 20%;
+    font-size: 1.5em;
+}
+
+#front-content{
+    padding: 80px 20px;
+}
+
+.sidebar {
+  float:right;
+  width:20%;
+}
+
+.sidebar ul {
+	    list-style: none;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+}
+
+
+.sidebar li a{
+text-decoration: none;
+		font-size: 1.1em;
+		color:  #154360;
+		    
+}
+
+.menuback {
+	background: rgba(21,67,96, 0.1);
+	padding: 10px;
+    margin-bottom: 7px;
+}
+
+.enter-btn h3{
+	    text-align: center;
+    padding-top: 10%;
+    font-size: 2em;
+    
+}
+
+.enter-btn h3 a{
+	    text-decoration:none;
+		color: #D6DBDF;
+}
+
+.enter-btn h3 a:hover {
+	
+} 

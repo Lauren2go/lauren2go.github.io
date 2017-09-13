@@ -51,6 +51,7 @@
   margin: 40px;
   margin: 0px 40px 0px 80px;
   box-shadow:  2px 2px 2px #888888;
+  overflow: hidden;
 }
 
 .nav2 {
@@ -119,3 +120,71 @@ text-decoration: none;
 .enter-btn h3 a:hover {
 	
 } 
+
+/**Explore style**/
+
+.front-cover {
+	background: rgba(255,255,255,0.7);
+    min-height: 400px;
+	overflow:hidden;
+}
+
+
+.grid a img { 
+  -webkit-transition: all 0.5s ease-in-out; 
+     -moz-transition: all 0.5s ease-in-out; 
+      -ms-transition: all 0.5s ease-in-out; 
+       -o-transition: all 0.5s ease-in-out; 
+          transition: all 0.5s ease-in-out;
+
+}
+
+.grid a:hover img, .grid a:focus img { 
+	-webkit-transform: scale(1.1);  /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.1);  /* FF3.5+ */
+      -ms-transform: scale(1.1);  /* IE9 */
+       -o-transform: scale(1.1);  /* Opera 10.5+ */
+          transform: scale(1.1);
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+
+.cell img {
+  display: block;
+  border:white 1px solid;
+    }
+
+@media screen and (min-width: 600px){
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:50%;
+  }
+  
+
+}
+@media screen and (min-width: 1000px){
+  .cell {
+    width:calc (100%/3);
+  }
+}
+.cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px){
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell{
+    width: calc(33.3333% - 2rem);
+  }
+}

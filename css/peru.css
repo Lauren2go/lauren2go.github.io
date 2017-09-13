@@ -21,6 +21,7 @@
 	text-decoration: none;
 }
 
+
 .globalfooter{
 	position: fixed;
 	right: 0;
@@ -73,11 +74,16 @@
 
 #front-content p {
 	margin-left: 20%;
+    font-size: 1.3em;
+}
+@media (min-width: 500px){
+	#front-content p {
     font-size: 1.5em;
 }
-
+}
+	
 #front-content{
-    padding: 80px 20px;
+    padding: 40px 20px 0 20px;
 }
 
 .sidebar {
@@ -89,6 +95,8 @@
    .sidebar { float: none; 
    width:100%;
    margin-bottom:50px;}
+   
+   .sidebar h3{ display:none;}
 }
 
 .sidebar ul {
@@ -111,6 +119,11 @@ text-decoration: none;
     margin-bottom: 7px;
 }
 
+li a:hover {
+	color: #708090;
+}
+	
+	
 .enter-btn h3{
 	    text-align: center;
     padding-top: 10%;
@@ -139,6 +152,7 @@ text-decoration: none;
 	background: rgba(255,255,255,0.7);
     min-height: 400px;
 	overflow:hidden;
+	    margin-bottom: 30px;
 }
 
 

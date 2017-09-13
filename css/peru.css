@@ -51,8 +51,8 @@
   margin: 40px;
   margin: 0px 40px 0px 80px;
   box-shadow:  2px 2px 2px #888888;
-  overflow: hidden;
 }
+
 
 .nav2 {
   float:right;
@@ -72,7 +72,7 @@
 }
 
 #front-content p {
-	    margin-left: 20%;
+	margin-left: 20%;
     font-size: 1.5em;
 }
 
@@ -83,6 +83,12 @@
 .sidebar {
   float:right;
   width:20%;
+}
+
+@media (max-width: 850px) {
+   .sidebar { float: none; 
+   width:100%;
+   margin-bottom:50px;}
 }
 
 .sidebar ul {
@@ -121,7 +127,13 @@ text-decoration: none;
 	
 } 
 
+.in-use-link {
+	color: #708090;
+	}
+
 /**Explore style**/
+
+
 
 .front-cover {
 	background: rgba(255,255,255,0.7);
@@ -165,10 +177,12 @@ text-decoration: none;
   }
   .cell {
     width:50%;
+	max-height:320px;
+	overflow:hidden;
   }
-  
-
 }
+
+
 @media screen and (min-width: 1000px){
   .cell {
     width:calc (100%/3);
@@ -187,4 +201,21 @@ text-decoration: none;
   .cell{
     width: calc(33.3333% - 2rem);
   }
+}
+
+
+.cell .text {
+	position:relative;
+	width:80%;
+	bottom: 60px;
+    left: -10%;
+	visibility:hidden;
+	color:white;
+    padding: 10px;
+    text-align: center;
+}
+
+.cell:hover .text {
+visibility:visible;
+background:  rgba(0,0,0,0.5);
 }

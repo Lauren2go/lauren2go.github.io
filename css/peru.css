@@ -87,7 +87,7 @@ h1, h2, h3, h4, p {
 	  height:300px;
 }}
 
-@media (max-height: 640px) {
+@media (max-height: 680px) {
 
 .front-main {
 	    height: 400px;
@@ -126,11 +126,7 @@ h1, h2, h3, h4, p {
     display:none;
 }}
 
-@media (max-height: 680px) {
 
-.front-main p{
-    display:none;
-}}
 
  .sidebar {
 	 float:right;

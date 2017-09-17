@@ -99,7 +99,7 @@ h1, h2, h3, h4, p {
 		padding-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 865px) {
 
 .front-main h1{
 	    font-size: 5em;
@@ -119,7 +119,14 @@ h1, h2, h3, h4, p {
     font-size: 2em;
 }}
 
+
 @media (max-width: 480px) {
+
+.front-main p{
+    display:none;
+}}
+
+@media (max-height: 638px) {
 
 .front-main p{
     display:none;

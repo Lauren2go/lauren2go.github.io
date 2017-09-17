@@ -126,7 +126,7 @@ h1, h2, h3, h4, p {
     display:none;
 }}
 
-@media (max-height: 638px) {
+@media (max-height: 680px) {
 
 .front-main p{
     display:none;

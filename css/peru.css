@@ -199,7 +199,11 @@ li a:hover {
 	color: #708090;
 	}
 
-
+.intro {
+	font-weight: 200;
+    font-style: italic;
+	font-size: 1.3m;
+}
 
 /**Explore style**/
 
@@ -215,11 +219,8 @@ li a:hover {
 }
 
 #explore-intro {
-    font-weight: 200;
-    font-style: italic;
     padding: 20px 20px 0 20px;
     text-align: left;
-    font-size: 1.3m;
 }
 
 @media (max-width: 768px) {
@@ -309,7 +310,6 @@ background:  rgba(0,0,0,0.5);
 
 #cuisine-intro {
 		text-align: center;
-		text-decoration: italic;
 }	
 
 .slide {

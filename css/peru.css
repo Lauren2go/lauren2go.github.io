@@ -75,6 +75,7 @@ h1, h2, h3, h4, p {
 
 .main {
 	margin: auto;
+	width: 80%;
 }}
 
 .front-main  {
@@ -286,6 +287,10 @@ background:  rgba(0,0,0,0.5);
 		background: rgba(255,255,255,0.8);
 }
 
+#tips-cover img {
+	max-width:100%;
+}
+
 .tips-list li{
 	list-style-position: inside;
 	}
@@ -296,6 +301,87 @@ background:  rgba(0,0,0,0.5);
 
 
 	
+	/**Cuisine style**/
+#cuisine-cover {
+		padding: 20px;
+		background: rgba(255,255,255,0.8);
+}	
+
+#cuisine-intro {
+		text-align: center;
+		text-decoration: italic;
+}	
+
+.slide {
+	max-width:90%;
+	min-height: 300px;
+	margin:auto;
+	border: 1px white solid;
+	margin-bottom: 20px;
+}
+
+#slide1back {
+	background-image: url("https://i.imgur.com/kmvueUZ.jpg");
+	background-size:cover;
+	background-position: 20% 55%;  
+}
+
+
+#slide2back {
+  background: url("https://i.imgur.com/a3wIb4x.jpg");
+  background-size:cover;
+  background-position: 50% 55%;  
+}
+
+#slide3back {
+  background: url("https://i.imgur.com/2eILLkB.jpg");
+  background-size:cover;
+  background-position: 50% 55%;  
+}
+
+#slide4back {
+  background: url("https://i.imgur.com/iaUDf5m.jpg");
+  background-size:cover;
+  background-position: 50% 60%;  
+}
+
+#slide5back {
+  background: url("https://i.imgur.com/xNjk02c.jpg");
+  background-size:cover;
+  background-position: 50% 50%;  
+}
+
+#slide6back {
+  background: url("https://i.imgur.com/VDtaQnp.jpg");
+  background-size:cover;
+  background-position: 50% 55%;  
+}
+
+.slidecap {position: relative;
+    top: 0;
+  max-width: 35%;
+  height:100%;
+  background-color: rgba(0,0,0,0.6);
+color:white;
+padding: 5%; 
+}
+
+@media (max-width:640px) {
+	.slidecap {
+  max-width: 55%;
+}}
+
+.slidecap h4 {
+  color: #FFE761;
+}
+
+.slidecap a {
+  color: #FFE761;
+}
+.slidecap a:hover{
+  color: #FFCC00;
+}
+
 	
 	
 /**Responsive View port Styling for gallery**/

@@ -8,6 +8,14 @@ h1, h2, h3, h4, p {
 	margin-bottom:15px;
 }
 
+a {
+	color:  #154360;
+}
+
+a:hover {
+	color: #708090;
+}
+
 .navbar li{
 	display: inline;
 	margin-right: 10px;
@@ -67,7 +75,7 @@ h1, h2, h3, h4, p {
   background-size: cover;
   background-position: center;
   margin: 20px 0 80px 40px;
-  margin-bottom: 160px;
+  
   box-shadow:  2px 2px 2px #888888;
 
 }
@@ -88,10 +96,10 @@ h1, h2, h3, h4, p {
 	  height:300px;
 }}
 
-@media (max-height: 680px) {
+@media (max-height: 640px) {
 
 .front-main {
-	    height: 400px;
+	    height: 380px;
 }}
 
 .front-main h1{
@@ -152,7 +160,6 @@ h1, h2, h3, h4, p {
 .sidebar li a{
 		text-decoration: none;
 		font-size: 1.1em;
-		color:  #154360;
 		    
 }
 
@@ -162,9 +169,7 @@ h1, h2, h3, h4, p {
     margin-bottom: 7px;
 }
 
-li a:hover {
-	color: #708090;
-}
+
 	
 .enter-btn h3{
 	    text-align: center;
@@ -205,8 +210,46 @@ li a:hover {
 	font-size: 1.3m;
 }
 
-/**Explore style**/
+.social {
+	float:left;
+	margin-top: -160px;
+	
+}
 
+@media (max-width:480px) {
+	.social {
+	float:none;
+	margin-top: 20px;
+    margin-bottom: 80px;
+	
+}
+}
+
+.home-btn {
+	 text-align: right;
+    padding: 5px 5px 0 2px;
+    font-size: 1.2em;
+ }
+
+.social img{
+	display:block;	
+	margin-bottom: 10px;
+}
+
+@media (max-width:480px) {
+.social img{
+	display:inline;	
+	padding:5px;
+	
+}
+}}
+
+/**socialcolors CAD4E0**/
+
+/**Explore style**/
+#explore-intro  {
+	font-size:1.3em;
+}
 
 .sidebar h2 {
 	font-size: 1.3em;
@@ -286,6 +329,7 @@ background:  rgba(0,0,0,0.5);
 #tips-cover {
 		padding:20px;
 		background: rgba(255,255,255,0.8);
+		text-align:left;
 }
 
 #tips-cover img {
@@ -308,8 +352,8 @@ background:  rgba(0,0,0,0.5);
 		background: rgba(255,255,255,0.8);
 }	
 
-#cuisine-intro {
-		text-align: center;
+#cuisine-cover h2, #cuisine-cover h3{
+			text-align: center;
 }	
 
 .slide {
@@ -410,7 +454,7 @@ padding: 5%;
  
 }
 .cell {
-  margin: 1rem;
+      margin: 1rem 1rem 0 1rem;
   
 }
 

@@ -50,6 +50,10 @@ a:hover {
 .logo {
   padding: 20px 20px;
 }
+@media (max-width:360px){
+	.logo {padding: 0;
+    font-size: 0.6em;}
+}
 
 .wrapper {
 	max-width:1024px;
@@ -69,6 +73,13 @@ a:hover {
   padding: 5px 10px;    
 }
 
+@media (max-width:360) {
+.nav2 {
+  float:right;
+ margin: 20px 0;
+}
+}
+
 .main {
   width:70%;
   background-image: url("https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/18012138_1687723807912373_1358498941703815168_n.jpg");
@@ -84,6 +95,7 @@ a:hover {
 .main {
 	margin: auto;
 	width: 80%;
+	margin-bottom: 100px;
 }}
 
 .front-main  {
@@ -210,14 +222,14 @@ a:hover {
 	font-size: 1.3m;
 }
 
-.social {
+.socialfront {
 	float:left;
 	margin-top: -160px;
 	
 }
 
-@media (max-width:480px) {
-	.social {
+@media (max-width:768px) {
+.socialfront {
 	float:none;
 	margin-top: 20px;
     margin-bottom: 80px;
@@ -225,24 +237,52 @@ a:hover {
 }
 }
 
-.home-btn {
-	 text-align: right;
-    padding: 5px 5px 0 2px;
-    font-size: 1.2em;
- }
-
-.social img{
+.socialfront img{
 	display:block;	
 	margin-bottom: 10px;
 }
 
-@media (max-width:480px) {
-.social img{
+@media (max-width:768px) {
+.socialfront img{
 	display:inline;	
 	padding:5px;
 	
 }
+}
+
+.social {
+    float: left;
+    margin-top: 3%;
+    margin-left: -5px;
+}
+
+.social img{
+    display:block;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+.social {
+        float: right;
+    margin-top: -20px;
+}	
+.social img{
+        display:inline;
 }}
+
+.home-btn h2{
+	 text-align: right;
+     padding:10px;
+	 margin: 0;
+ }
+ 
+ @media (max-width:768px) {
+.home-btn h2{	 
+		text-align:left;
+     float: right;
+    margin-top: -50px;
+ }}
+ 
 
 /**socialcolors CAD4E0**/
 
@@ -323,6 +363,48 @@ background:  rgba(0,0,0,0.5);
 	overflow: hidden;
 	}
 	
+/**lima page**/
+
+.exploresidebar {
+	text-align:right;
+	    float: right;
+       margin-top: -1600px;
+}
+
+.exploresidebar ul{
+	list-style: none;
+}
+
+.exploresidebar li{
+	    padding-bottom: 5px;
+}
+
+@media (max-width:768px) {
+	.exploresidebar {
+	text-align: left;
+    float: none;
+    margin-top: 0;
+    margin-bottom: 100px;
+	width:100%;
+}
+
+.exploreitem {
+	background-color: rgba(21,67,96, 0.1);
+    padding: 5px;
+    margin: 2px;
+}
+
+.exploresidebar h3 {
+	display:none;
+}
+
+.main-lima {
+	margin-bottom:30px;
+}
+}
+
+
+
 	
 /**Tips**/
 
@@ -441,7 +523,7 @@ padding: 5%;
 }
 .cell {
     width:50%;
-	max-height:320px;
+	max-height:290px;
 	overflow:hidden;
 }
   

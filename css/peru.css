@@ -30,7 +30,7 @@ a:hover {
 
 .navbar a{
 	color:white;
-	text-decoration: none;
+	
 }
 
 
@@ -45,6 +45,10 @@ a:hover {
 	margin: 0px;
 	text-align: center;
 	font-size: 0.8em;
+}
+
+.globalfooter a {
+	color: whitesmoke;
 }
 	
 .logo {
@@ -147,6 +151,7 @@ a:hover {
     display:none;
 }}
 
+    
 
 
  .sidebar {
@@ -288,7 +293,7 @@ a:hover {
 
 /**Explore style**/
 #explore-intro  {
-	font-size:1.3em;
+	font-size:1.15em;
 }
 
 .sidebar h2 {
@@ -365,36 +370,38 @@ background:  rgba(0,0,0,0.5);
 	
 /**lima page**/
 
-.exploresidebar {
+.sidebarhidden2 {
+	display:none;
+}
+
+.sidebarhidden1 {
 	text-align:right;
-	    float: right;
-       margin-top: -1600px;
-}
-
-.exploresidebar ul{
-	list-style: none;
-}
-
-.exploresidebar li{
-	    padding-bottom: 5px;
 }
 
 @media (max-width:768px) {
-	.exploresidebar {
+	
+.sidebarhidden1 {
+	display:none;
+}
+
+.sidebarhidden2  {
 	text-align: left;
     float: none;
     margin-top: 0;
     margin-bottom: 100px;
 	width:100%;
+	display:block;
 }
-
+.sidebarhidden2  ul{
+	list-style:none;
+}
 .exploreitem {
 	background-color: rgba(21,67,96, 0.1);
     padding: 5px;
     margin: 2px;
 }
 
-.exploresidebar h3 {
+.sidebarhidden2 h3 {
 	display:none;
 }
 
@@ -403,6 +410,20 @@ background:  rgba(0,0,0,0.5);
 }
 }
 
+.stay-table {
+	width: 100%;
+}
+
+.stay-table th{
+	border: 1px black solid;
+	padding:2px;
+}
+
+.stay-table td{
+	border: 1px black dashed;
+	padding:2px;
+	text-align:center;
+}
 
 
 	

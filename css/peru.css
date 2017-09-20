@@ -248,15 +248,13 @@ a:hover {
 	margin-bottom: 10px;
 }
 
-@media screen and (max-width:768px) {
-.socialfront img{
-	display:inline;	
-	padding:5px;
-	
-}
+.social {
 }
 
-.social {
+
+
+@media screen and (min-width: 768px) {
+.social  {
     float: left;
     margin-top: 3%;
     margin-left: -5px;
@@ -267,14 +265,7 @@ a:hover {
 	margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-.social {
-        float: right;
-    margin-top: -20px;
-}	
-.social img{
-        display:inline;
-}}
+}
 
 .home-btn h2{
 	 text-align: right;

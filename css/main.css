@@ -92,6 +92,9 @@ body {
 	    text-align: center;
     margin: 7%;
 }
-
+@media (max-height: 440px) {
+.contact-btn {
+    margin-bottom: 80px;
+}}
 
 	

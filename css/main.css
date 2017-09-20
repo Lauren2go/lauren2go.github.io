@@ -28,6 +28,12 @@ body {
 	margin: 10px 0px 10px 0px;
 	}
 	
+@media (max-width:840px) {
+.front-title {	
+	font-size: 5em;
+}
+}
+	
 @media (max-width:480px) {
 .front-title {	
 	font-size: 3em;
@@ -42,6 +48,7 @@ body {
 	border-bottom: 1px dashed #E8C547;
 	padding: 20px 60px 20px 60px;
 }
+
 
 
 .front-contact {

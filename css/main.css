@@ -25,12 +25,12 @@ body {
 	text-align: center;
 	font-weight: 200;
 	font-size: 7em;
-	margin: 20px 0px 20px 0px;
+	margin: 10px 0px 10px 0px;
 	}
 	
 @media (max-width:480px) {
 .front-title {	
-	font-size: 5em;
+	font-size: 4em;
 }
 }
 	
@@ -49,6 +49,13 @@ body {
 	padding: 20px;
 	margin: auto;
 	color: #283044;
+}
+
+@media (max-width:480px) {
+.front-contact {
+	padding: 10px;
+	
+}
 }
 
 .globalfooter{
@@ -78,4 +85,6 @@ body {
 	    text-align: center;
     margin: 7%;
 }
+
+
 	

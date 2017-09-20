@@ -110,6 +110,7 @@ a:hover {
 
 .front-main  {
 	  height:300px;
+	  margin-bottom:0;
 }}
 
 @media (max-height: 680px) {

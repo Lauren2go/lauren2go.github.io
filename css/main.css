@@ -27,6 +27,12 @@ body {
 	margin: 20px 0px 20px 0px;
 	}
 	
+@media (max-width:480px) {
+.front-title {	
+	font-size: 5em;
+}
+}
+	
 .front-description {
 	text-align: center;
 	max-width: 600px;

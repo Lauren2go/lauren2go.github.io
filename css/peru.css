@@ -518,6 +518,11 @@ padding: 5%;
   max-width: 55%;
 }}
 
+@media (max-width:480px) {
+.slidecap {
+  max-width: 100%;
+}}
+
 .slidecap h4 {
   color: #FFE761;
 }
